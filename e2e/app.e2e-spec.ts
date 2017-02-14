@@ -16,7 +16,6 @@ describe( 'phonecat App', function() {
 
   it( 'should redirect `index.html` to `index.html#!/phones', function() {
     browser.get( 'index.html' );
-    browser.waitForAngular();
     browser.getCurrentUrl().then( function( url: string ) {
       expect( url.endsWith( '/phones' ) ).toBe( true );
     });

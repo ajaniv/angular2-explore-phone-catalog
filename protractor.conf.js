@@ -5,6 +5,7 @@
 var SpecReporter = require('jasmine-spec-reporter');
 
 exports.config = {
+  getPageTimeout: 20000,
   allScriptsTimeout: 11000,
   specs: [
 	'node_modules/jasmine-expect/index.js',
